@@ -20,6 +20,10 @@ def transferMoney():
 def store():
     return(render_template("storeMoney.html"))
 
+@app.route("/trackInvoice", methods=["GET","POST"])
+def trackInvoice():
+    return(render_template("trackInvoice.html"))
+
 if __name__ == "__main__":
     app.run()
 
